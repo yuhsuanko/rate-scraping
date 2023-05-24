@@ -1,0 +1,1423 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="exceltest" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="894,495.33333333333326" sap2010:WorkflowViewState.IdRef="exceltest_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="exceltest" sap:VirtualizedContainerService.HintSize="592,430.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="row_count_ex_" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="530,308.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,212.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_158">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="496,492.66666666666674" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" TemplatePath="data\各銀行匯率資料_04241035.xlsx" WorkbookPath="data/各銀行匯率資料.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="462,212.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_157">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="資料整理" sap:VirtualizedContainerService.HintSize="400,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_156">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence DisplayName="刪去前後空白" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_87">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="388,90.66666666666667" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_30" Range="[Excel.Sheet(&quot;臺灣銀行&quot;)]" SaveAfterEachRow="False">
+                          <ueab:ExcelForEachRowX.Body>
+                            <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                              <ActivityAction.Argument1>
+                                <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                              </ActivityAction.Argument1>
+                              <ActivityAction.Argument2>
+                                <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                              </ActivityAction.Argument2>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,441.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_83">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="434,71.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_31">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("幣別")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("幣別").Trim]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_32">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("即期買入")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("即期買入").Trim]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_33">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("即期賣出")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("即期賣出").Trim]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelForEachRowX.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ueab:ExcelForEachRowX>
+                        <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="388,90.66666666666667" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_31" Range="[Excel.Sheet(&quot;臺灣土地銀行&quot;)]" SaveAfterEachRow="False">
+                          <ueab:ExcelForEachRowX.Body>
+                            <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                              <ActivityAction.Argument1>
+                                <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                              </ActivityAction.Argument1>
+                              <ActivityAction.Argument2>
+                                <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                              </ActivityAction.Argument2>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,206" sap2010:WorkflowViewState.IdRef="Sequence_84">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_34">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("幣別")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("幣別").Trim]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelForEachRowX.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ueab:ExcelForEachRowX>
+                        <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="388,90.66666666666667" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_32" Range="[Excel.Sheet(&quot;板信商銀&quot;)]" SaveAfterEachRow="False">
+                          <ueab:ExcelForEachRowX.Body>
+                            <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                              <ActivityAction.Argument1>
+                                <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                              </ActivityAction.Argument1>
+                              <ActivityAction.Argument2>
+                                <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                              </ActivityAction.Argument2>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,194" sap2010:WorkflowViewState.IdRef="Sequence_85">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_35">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("幣別")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("幣別").Trim]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelForEachRowX.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ueab:ExcelForEachRowX>
+                        <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="388,82" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_33" Range="[Excel.Sheet(&quot;元大商銀&quot;)]" SaveAfterEachRow="False">
+                          <ueab:ExcelForEachRowX.Body>
+                            <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                              <ActivityAction.Argument1>
+                                <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                              </ActivityAction.Argument1>
+                              <ActivityAction.Argument2>
+                                <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                              </ActivityAction.Argument2>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,442" sap2010:WorkflowViewState.IdRef="Sequence_86">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_36">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("幣別")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("幣別").Trim]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_37">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("即期買入")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("即期買入").Trim]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_38">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("即期賣出")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("即期賣出").Trim]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelForEachRowX.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ueab:ExcelForEachRowX>
+                      </Sequence>
+                      <Sequence DisplayName="臺灣銀行" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_88">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="434,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_14" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;-&quot;]" WhereToSearch="[Excel.Sheet(&quot;臺灣銀行&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="臺灣土地銀行" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_89">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="434,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_15" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;--&quot;]" WhereToSearch="[Excel.Sheet(&quot;臺灣土地銀行&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="合作金庫" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_93">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="338,61.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_13">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="501.3333333333333,339.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_90">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,217.33333333333334" sap2010:WorkflowViewState.IdRef="InsertColumnX_29" NewColumnName="幣別_EN" Range="[Excel.Sheet(&quot;合作金庫&quot;).Range(&quot;B:B&quot;)]" RelativeColumnName="即期買入" RelativePosition="Before" />
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="338,61.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_14">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,448" sap2010:WorkflowViewState.IdRef="Sequence_91">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;合作金庫&quot;).Range(&quot;A:A&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="434,326" sap2010:WorkflowViewState.IdRef="TextToColumnsX_34" OtherSeparator="(" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;合作金庫&quot;).Range(&quot;A:A&quot;)]" SplitByComma="True" SplitByLineBreak="False" SplitByOther="False" SplitBySemicolon="True" SplitBySpace="True" SplitByTabs="True" TextQualifier="None" />
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="338,61.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_15">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,290.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_92">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;合作金庫&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_52" Value="[&quot;幣別_EN&quot;]" />
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                      </Sequence>
+                      <Sequence DisplayName="第一銀行" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_109">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="532.6666666666666,217.33333333333334" sap2010:WorkflowViewState.IdRef="InsertColumnX_30" NewColumnName="幣別_EN" Range="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;B:B&quot;)]" RelativeColumnName="類別" RelativePosition="Before" />
+                        <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;A:A&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="532.6666666666666,326" sap2010:WorkflowViewState.IdRef="TextToColumnsX_35" OtherSeparator="(" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;A:A&quot;)]" SplitByComma="True" SplitByLineBreak="False" SplitByOther="True" SplitBySemicolon="True" SplitBySpace="True" SplitByTabs="True" TextQualifier="None" />
+                        <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;B:B&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="532.6666666666666,326" sap2010:WorkflowViewState.IdRef="TextToColumnsX_36" OtherSeparator=")" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;B:B&quot;)]" SplitByComma="True" SplitByLineBreak="False" SplitByOther="True" SplitBySemicolon="True" SplitBySpace="True" SplitByTabs="True" TextQualifier="None" />
+                        <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;第一銀行&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="532.6666666666666,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_53" Value="[&quot;幣別_EN&quot;]" />
+                        <ueab:DeleteColumnX ColumnName="類別" DisplayName="Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="532.6666666666666,169.33333333333334" sap2010:WorkflowViewState.IdRef="DeleteColumnX_9" Range="[Excel.Sheet(&quot;第一銀行&quot;)]" />
+                        <ueab:DeleteColumnX ColumnName="幣別代號_1" DisplayName="Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="532.6666666666666,169.33333333333334" sap2010:WorkflowViewState.IdRef="DeleteColumnX_10" Range="[Excel.Sheet(&quot;第一銀行&quot;)]" />
+                        <ueab:DeleteColumnX ColumnName="類別_1" DisplayName="Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="532.6666666666666,169.33333333333334" sap2010:WorkflowViewState.IdRef="DeleteColumnX_11" Range="[Excel.Sheet(&quot;第一銀行&quot;)]" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;第一銀行&quot;).Cell(&quot;C1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="532.6666666666666,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_54" Value="[&quot;即期買入&quot;]" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;第一銀行&quot;).Cell(&quot;D1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="532.6666666666666,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_55" Value="[&quot;即期賣出&quot;]" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;第一銀行&quot;).Cell(&quot;E1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="532.6666666666666,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_56" Value="[&quot;現金買入&quot;]" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;第一銀行&quot;).Cell(&quot;F1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="532.6666666666666,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_57" Value="[&quot;現金賣出&quot;]" />
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532.6666666666666,460" sap2010:WorkflowViewState.IdRef="CommentOut_16">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,371.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_94">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;F2:G2&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,249.33333333333334" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_38" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;D3:E3&quot;)]" Transpose="False" />
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532.6666666666666,460" sap2010:WorkflowViewState.IdRef="CommentOut_17">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,371.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_95">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;F4:G4&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,249.33333333333334" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_39" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;D5:E5&quot;)]" Transpose="False" />
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532.6666666666666,460" sap2010:WorkflowViewState.IdRef="CommentOut_18">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,371.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_96">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;F6:G6&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,249.33333333333334" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_40" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;D7:E7&quot;)]" Transpose="False" />
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532.6666666666666,460" sap2010:WorkflowViewState.IdRef="CommentOut_19">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,371.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_97">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;F8:G8&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,249.33333333333334" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_41" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;D9:E9&quot;)]" Transpose="False" />
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532.6666666666666,460" sap2010:WorkflowViewState.IdRef="CommentOut_20">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,371.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_98">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;F12:G12&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,249.33333333333334" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_42" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;D13:E13&quot;)]" Transpose="False" />
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532.6666666666666,460" sap2010:WorkflowViewState.IdRef="CommentOut_21">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,371.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_99">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;F14:G14&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,249.33333333333334" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_43" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;D15:E15&quot;)]" Transpose="False" />
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532.6666666666666,460" sap2010:WorkflowViewState.IdRef="CommentOut_22">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,371.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_100">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;F20:G20&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,249.33333333333334" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_44" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;D21:E21&quot;)]" Transpose="False" />
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532.6666666666666,460" sap2010:WorkflowViewState.IdRef="CommentOut_23">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,371.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_101">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;F22:G22&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,249.33333333333334" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_45" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;D23:E23&quot;)]" Transpose="False" />
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532.6666666666666,358" sap2010:WorkflowViewState.IdRef="CommentOut_24">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,269.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_102">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,147.33333333333334" sap2010:WorkflowViewState.IdRef="DeleteRowsX_15" Range="[Excel.Sheet(&quot;第一銀行&quot;)]" RowPositions="3, 5, 7, 9,13, 15, 21, 23" />
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;第一銀行&quot;).Cell(&quot;A1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="532.6666666666666,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_58" Value="[&quot;幣別&quot;]" />
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532.6666666666666,61.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_26">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,204" sap2010:WorkflowViewState.IdRef="Sequence_108">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="388,82" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_34" Range="[row_count_ex_]" SaveAfterEachRow="False">
+                                <ueab:ExcelForEachRowX.Body>
+                                  <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                    <ActivityAction.Argument1>
+                                      <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                    </ActivityAction.Argument1>
+                                    <ActivityAction.Argument2>
+                                      <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                    </ActivityAction.Argument2>
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="594.6666666666666,973.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_107">
+                                      <Sequence.Variables>
+                                        <Variable x:TypeArguments="x:String" Name="test" />
+                                      </Sequence.Variables>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[CurrentRow.ByField(&quot;類別&quot;) = &quot;現鈔&quot;]" DisplayName="While" sap:VirtualizedContainerService.HintSize="532.6666666666666,770" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+                                        <ui:InterruptibleWhile.Body>
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,602" sap2010:WorkflowViewState.IdRef="Sequence_103">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[row_count_ex_.Rows.IndexOf(CurrentRow).ToString]" />
+                                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[row_count_ex_.Rows.Count]" />
+                                            <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;F&quot; + (row_count_ex_.Rows.Count).ToString)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_46" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;D&quot; + (row_count_ex_.Rows.Count+1).ToString + &quot; :&quot; +  &quot;E&quot; + (row_count_ex_.Rows.Count+1).ToString)]" Transpose="False" />
+                                          </Sequence>
+                                        </ui:InterruptibleWhile.Body>
+                                      </ui:InterruptibleWhile>
+                                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532.6666666666666,52.666666666666664" sap2010:WorkflowViewState.IdRef="CommentOut_25">
+                                        <ui:CommentOut.Body>
+                                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="582,924.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_106">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <If Condition="[CurrentRow.ByField(&quot;類別&quot;) = &quot;現鈔&quot;]" sap:VirtualizedContainerService.HintSize="520,814" sap2010:WorkflowViewState.IdRef="If_3">
+                                              <If.Then>
+                                                <Sequence sap:VirtualizedContainerService.HintSize="486,663.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_104">
+                                                  <Sequence.Variables>
+                                                    <Variable x:TypeArguments="sd:DataTable" Name="row_count_ex" />
+                                                  </Sequence.Variables>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" Range="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;A1&quot; +&quot;:E&quot;+(CurrentRow.RowCount).ToString)]" SaveTo="[row_count_ex_]" />
+                                                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="444,85.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[row_count_ex_.Rows.Count]" />
+                                                  <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;F&quot; + (row_count_ex_.Rows.Count).ToString)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="444,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_47" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;第一銀行&quot;).Range(&quot;D&quot; + (row_count_ex_.Rows.Count+1).ToString + &quot; :&quot; +  &quot;E&quot; + (row_count_ex_.Rows.Count+1).ToString)]" Transpose="False" />
+                                                </Sequence>
+                                              </If.Then>
+                                              <If.Else>
+                                                <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_105">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Sequence>
+                                              </If.Else>
+                                            </If>
+                                          </Sequence>
+                                        </ui:CommentOut.Body>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:CommentOut>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </ueab:ExcelForEachRowX.Body>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ueab:ExcelForEachRowX>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                      </Sequence>
+                      <Sequence DisplayName="華南銀行" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_110">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;華南銀行&quot;).Range(&quot;D2:E2&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_48" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;華南銀行&quot;).Range(&quot;B3:C3&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;華南銀行&quot;).Range(&quot;D4:E4&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_49" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;華南銀行&quot;).Range(&quot;B5:C5&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;華南銀行&quot;).Range(&quot;D6:E6&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_50" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;華南銀行&quot;).Range(&quot;B7:C7&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;華南銀行&quot;).Range(&quot;D9:E9&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_51" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;華南銀行&quot;).Range(&quot;B10:C10&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;華南銀行&quot;).Range(&quot;D13:E13&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_52" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;華南銀行&quot;).Range(&quot;B14:C14&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;華南銀行&quot;).Range(&quot;D15:E15&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_53" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;華南銀行&quot;).Range(&quot;B16:C16&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;華南銀行&quot;).Range(&quot;D20:E20&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_54" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;華南銀行&quot;).Range(&quot;B21:C21&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;華南銀行&quot;).Range(&quot;D22:E22&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_55" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;華南銀行&quot;).Range(&quot;B23:C23&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;華南銀行&quot;).Range(&quot;D24:E24&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_56" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;華南銀行&quot;).Range(&quot;B24:C24&quot;)]" Transpose="False" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;華南銀行&quot;).Cell(&quot;A24&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteCellX_59" Value="[&quot;韓元&quot;]" />
+                        <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,138.66666666666666" sap2010:WorkflowViewState.IdRef="DeleteRowsX_16" Range="[Excel.Sheet(&quot;華南銀行&quot;)]" RowPositions="3, 5, 7, 10, 14, 16, 21, 23" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;華南銀行&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteCellX_60" Value="[&quot;即期買入&quot;]" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;華南銀行&quot;).Cell(&quot;C1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteCellX_61" Value="[&quot;即期賣出&quot;]" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;華南銀行&quot;).Cell(&quot;D1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteCellX_62" Value="[&quot;現金買入&quot;]" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;華南銀行&quot;).Cell(&quot;E1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteCellX_63" Value="[&quot;現金賣出&quot;]" />
+                        <ueab:ClearRangeX DisplayName="Clear Sheet/Range/Table" HasHeaders="False" sap:VirtualizedContainerService.HintSize="434,116.66666666666667" sap2010:WorkflowViewState.IdRef="ClearRangeX_2" TargetRange="[Excel.Sheet(&quot;華南銀行&quot;).Range(&quot;B16:C16&quot;)]" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;華南銀行&quot;).Cell(&quot;A1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteCellX_64" Value="[&quot;幣別&quot;]" />
+                      </Sequence>
+                      <Sequence DisplayName="彰化銀行" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_111">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,208.66666666666666" sap2010:WorkflowViewState.IdRef="InsertColumnX_31" NewColumnName="幣別_EN" Range="[Excel.Sheet(&quot;彰化銀行&quot;).Range(&quot;B:B&quot;)]" RelativeColumnName="買入" RelativePosition="Before" />
+                        <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;彰化銀行&quot;).Range(&quot;A:A&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="439.3333333333333,317.3333333333333" sap2010:WorkflowViewState.IdRef="TextToColumnsX_37" OtherSeparator="(" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;彰化銀行&quot;).Range(&quot;A:A&quot;)]" SplitByComma="True" SplitByLineBreak="False" SplitByOther="True" SplitBySemicolon="True" SplitBySpace="True" SplitByTabs="True" TextQualifier="None" />
+                        <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;彰化銀行&quot;).Range(&quot;B:B&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="439.3333333333333,317.3333333333333" sap2010:WorkflowViewState.IdRef="TextToColumnsX_38" OtherSeparator=")" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;彰化銀行&quot;).Range(&quot;B:B&quot;)]" SplitByComma="True" SplitByLineBreak="False" SplitByOther="True" SplitBySemicolon="True" SplitBySpace="True" SplitByTabs="True" TextQualifier="None" />
+                        <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;彰化銀行&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="439.3333333333333,160" sap2010:WorkflowViewState.IdRef="WriteCellX_65" Value="[&quot;幣別_EN&quot;]" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;彰化銀行&quot;).Cell(&quot;A1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="439.3333333333333,160" sap2010:WorkflowViewState.IdRef="WriteCellX_66" Value="[&quot;幣別&quot;]" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;彰化銀行&quot;).Cell(&quot;E1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="439.3333333333333,160" sap2010:WorkflowViewState.IdRef="WriteCellX_67" Value="[&quot;現金買入&quot;]" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;彰化銀行&quot;).Cell(&quot;F1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="439.3333333333333,160" sap2010:WorkflowViewState.IdRef="WriteCellX_68" Value="[&quot;現金賣出&quot;]" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;彰化銀行&quot;).Range(&quot;E2:F2&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="439.3333333333333,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_57" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;彰化銀行&quot;).Range(&quot;C3:D3&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;彰化銀行&quot;).Range(&quot;E6:F6&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="439.3333333333333,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_58" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;彰化銀行&quot;).Range(&quot;C7:D7&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;彰化銀行&quot;).Range(&quot;E13:F13&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="439.3333333333333,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_59" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;彰化銀行&quot;).Range(&quot;C14:D14&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;彰化銀行&quot;).Range(&quot;E16:F16&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="439.3333333333333,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_60" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;彰化銀行&quot;).Range(&quot;C17:D17&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;彰化銀行&quot;).Range(&quot;E20:F20&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="439.3333333333333,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_61" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;彰化銀行&quot;).Range(&quot;C19:D19&quot;)]" Transpose="False" />
+                        <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,138.66666666666666" sap2010:WorkflowViewState.IdRef="DeleteRowsX_17" Range="[Excel.Sheet(&quot;彰化銀行&quot;)]" RowPositions="3, 7, 14, 17, 19" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;彰化銀行&quot;).Cell(&quot;C1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="439.3333333333333,160" sap2010:WorkflowViewState.IdRef="WriteCellX_69" Value="[&quot;即期買入&quot;]" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;彰化銀行&quot;).Cell(&quot;D1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="439.3333333333333,160" sap2010:WorkflowViewState.IdRef="WriteCellX_70" Value="[&quot;即期賣出&quot;]" />
+                      </Sequence>
+                      <Sequence DisplayName="上海商銀" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_113">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_35" Range="[Excel.Sheet(&quot;上海商銀&quot;)]" SaveAfterEachRow="False">
+                          <ueab:ExcelForEachRowX.Body>
+                            <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                              <ActivityAction.Argument1>
+                                <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                              </ActivityAction.Argument1>
+                              <ActivityAction.Argument2>
+                                <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                              </ActivityAction.Argument2>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,194" sap2010:WorkflowViewState.IdRef="Sequence_112">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_39">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("幣別")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="ue:ExcelValue">[System.Text.RegularExpressions.Regex.Replace(CurrentRow.ByField("幣別"), "[\u3000]", "")]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelForEachRowX.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ueab:ExcelForEachRowX>
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;上海商銀&quot;).Cell(&quot;E1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteCellX_71" Value="[&quot;現金買入&quot;]" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;上海商銀&quot;).Cell(&quot;F1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteCellX_72" Value="[&quot;現金賣出&quot;]" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;上海商銀&quot;).Range(&quot;E3:F3&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_62" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;上海商銀&quot;).Range(&quot;C2:D2&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;上海商銀&quot;).Range(&quot;E6:F6&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_63" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;上海商銀&quot;).Range(&quot;C5:D5&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;上海商銀&quot;).Range(&quot;E8:F8&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_64" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;上海商銀&quot;).Range(&quot;C7:D7&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;上海商銀&quot;).Range(&quot;E10:F10&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_65" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;上海商銀&quot;).Range(&quot;C9:D9&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;上海商銀&quot;).Range(&quot;E22:F22&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_66" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;上海商銀&quot;).Range(&quot;C21:D21&quot;)]" Transpose="False" />
+                        <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,138.66666666666666" sap2010:WorkflowViewState.IdRef="DeleteRowsX_18" Range="[Excel.Sheet(&quot;上海商銀&quot;)]" RowPositions="2, 4, 5, 7, 9, 21" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;上海商銀&quot;).Cell(&quot;C1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteCellX_73" Value="[&quot;即期買入&quot;]" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;上海商銀&quot;).Cell(&quot;D1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteCellX_74" Value="[&quot;即期賣出&quot;]" />
+                      </Sequence>
+                      <Sequence DisplayName="富邦銀行" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_114">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;富邦銀行&quot;).Range(&quot;E2:E15&quot;)]" DisplayName="Copy/Paste Range" ExcludeHeaderFromSourceTable="False" sap:VirtualizedContainerService.HintSize="434,249.33333333333334" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_67" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;富邦銀行&quot;).Range(&quot;D2:D15&quot;)]" Transpose="False" />
+                        <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" OtherSeparator="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;富邦銀行&quot;).Range(&quot;C:C&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="434,326" sap2010:WorkflowViewState.IdRef="TextToColumnsX_39" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;富邦銀行&quot;).Range(&quot;C:C&quot;)]" SplitByComma="False" SplitByLineBreak="True" SplitByOther="False" SplitBySemicolon="False" SplitBySpace="True" SplitByTabs="False" TextQualifier="None" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;富邦銀行&quot;).Cell(&quot;D1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_75" Value="[&quot;即期賣出&quot;]" />
+                        <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" OtherSeparator="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;富邦銀行&quot;).Range(&quot;E:E&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="434,326" sap2010:WorkflowViewState.IdRef="TextToColumnsX_40" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;富邦銀行&quot;).Range(&quot;E:E&quot;)]" SplitByComma="True" SplitByLineBreak="True" SplitByOther="False" SplitBySemicolon="True" SplitBySpace="True" SplitByTabs="True" TextQualifier="None" />
+                        <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;富邦銀行&quot;).Cell(&quot;F1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_76" Value="[&quot;現金賣出&quot;]" />
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="434,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_16" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;---&quot;]" WhereToSearch="[Excel.Sheet(&quot;富邦銀行&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="國泰世華" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_115">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="434,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_17" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;--&quot;]" WhereToSearch="[Excel.Sheet(&quot;國泰世華&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="高雄銀行" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_123">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="538,428" sap2010:WorkflowViewState.IdRef="CommentOut_27">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="501.3333333333333,339.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_116">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,217.33333333333334" sap2010:WorkflowViewState.IdRef="InsertColumnX_32" NewColumnName="幣別_EN" Range="[Excel.Sheet(&quot;高雄銀行&quot;).Range(&quot;B:B&quot;)]" RelativeColumnName="即期買入" RelativePosition="Before" />
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="538,596.6666666666666" sap2010:WorkflowViewState.IdRef="CommentOut_28">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,508" sap2010:WorkflowViewState.IdRef="Sequence_118">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,386" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_36" Range="[Excel.Sheet(&quot;高雄銀行&quot;)]" SaveAfterEachRow="False">
+                                <ueab:ExcelForEachRowX.Body>
+                                  <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                    <ActivityAction.Argument1>
+                                      <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                    </ActivityAction.Argument1>
+                                    <ActivityAction.Argument2>
+                                      <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                    </ActivityAction.Argument2>
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,193.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_117">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Assign sap:VirtualizedContainerService.HintSize="338,71.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_40">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByIndex(1)]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="ue:ExcelValue">[System.Text.RegularExpressions.Regex.Match(CurrentRow.ByIndex(0),"[A-Za-z]{3}").Value]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </ueab:ExcelForEachRowX.Body>
+                              </ueab:ExcelForEachRowX>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="538,596.6666666666666" sap2010:WorkflowViewState.IdRef="CommentOut_29">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,508" sap2010:WorkflowViewState.IdRef="Sequence_120">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,386" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_37" Range="[Excel.Sheet(&quot;高雄銀行&quot;)]" SaveAfterEachRow="False">
+                                <ueab:ExcelForEachRowX.Body>
+                                  <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                    <ActivityAction.Argument1>
+                                      <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                    </ActivityAction.Argument1>
+                                    <ActivityAction.Argument2>
+                                      <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                    </ActivityAction.Argument2>
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,193.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_119">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Assign sap:VirtualizedContainerService.HintSize="338,71.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_41">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByIndex(0)]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="ue:ExcelValue">[System.Text.RegularExpressions.Regex.Match(CurrentRow.ByIndex(0),"[^A-Za-z]+").Value]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </ueab:ExcelForEachRowX.Body>
+                              </ueab:ExcelForEachRowX>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="538,301.3333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_30">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,212.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_122">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="338,90.66666666666667" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_38" Range="[Excel.Sheet(&quot;高雄銀行&quot;)]" SaveAfterEachRow="False">
+                                <ueab:ExcelForEachRowX.Body>
+                                  <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                    <ActivityAction.Argument1>
+                                      <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                    </ActivityAction.Argument1>
+                                    <ActivityAction.Argument2>
+                                      <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                    </ActivityAction.Argument2>
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,193.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_121">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Assign sap:VirtualizedContainerService.HintSize="338,71.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_42">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("幣別")]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("幣別").Trim]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </ueab:ExcelForEachRowX.Body>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ueab:ExcelForEachRowX>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                      </Sequence>
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="600,301.3333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_31">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="462,212.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_125">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Sequence DisplayName="兆豐國際" sap:VirtualizedContainerService.HintSize="400,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_124">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,217.33333333333334" sap2010:WorkflowViewState.IdRef="InsertColumnX_33" NewColumnName="幣別_EN" Range="[Excel.Sheet(&quot;兆豐國際&quot;).Range(&quot;B:B&quot;)]" RelativeColumnName="即期買入" RelativePosition="Before" />
+                              <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;兆豐國際&quot;).Range(&quot;A:A&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="439.3333333333333,326" sap2010:WorkflowViewState.IdRef="TextToColumnsX_41" OtherSeparator="(" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;兆豐國際&quot;).Range(&quot;A:A&quot;)]" SplitByComma="True" SplitByLineBreak="False" SplitByOther="False" SplitBySemicolon="True" SplitBySpace="True" SplitByTabs="True" TextQualifier="None" />
+                              <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;兆豐國際&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="439.3333333333333,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_77" Value="[&quot;幣別_EN&quot;]" />
+                            </Sequence>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                      </ui:CommentOut>
+                      <Sequence DisplayName="花旗銀行" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_126">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,147.33333333333334" sap2010:WorkflowViewState.IdRef="DeleteRowsX_19" Range="[Excel.Sheet(&quot;花旗銀行&quot;)]" RowPositions="2-3" />
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="434,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_18" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;N/A&quot;]" WhereToSearch="[Excel.Sheet(&quot;花旗銀行&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="王道銀行" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_127">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,217.33333333333334" sap2010:WorkflowViewState.IdRef="InsertColumnX_34" NewColumnName="幣別_EN" Range="[Excel.Sheet(&quot;王道銀行&quot;).Range(&quot;D:D&quot;)]" RelativeColumnName="現金買入" RelativePosition="Before" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;王道銀行&quot;).Range(&quot;D:D&quot;)]" DisplayName="Copy/Paste Range" ExcludeHeaderFromSourceTable="False" sap:VirtualizedContainerService.HintSize="439.3333333333333,249.33333333333334" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_68" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;王道銀行&quot;).Range(&quot;F:F&quot;)]" Transpose="False" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;王道銀行&quot;).Cell(&quot;D1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="439.3333333333333,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_78" Value="[&quot;即期賣出&quot;]" />
+                        <ueab:DeleteColumnX ColumnName="賣出即期匯率" DisplayName="Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,169.33333333333334" sap2010:WorkflowViewState.IdRef="DeleteColumnX_12" Range="[Excel.Sheet(&quot;王道銀行&quot;)]" />
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="439.3333333333333,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_19" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;-&quot;]" WhereToSearch="[Excel.Sheet(&quot;王道銀行&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="臺灣企銀" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_128">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;臺灣企銀&quot;).Cell(&quot;E1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteCellX_79" Value="[&quot;現金買入&quot;]" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;臺灣企銀&quot;).Cell(&quot;F1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteCellX_80" Value="[&quot;現金賣出&quot;]" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;臺灣企銀&quot;).Cell(&quot;C1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteCellX_81" Value="[&quot;即期買入&quot;]" />
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;臺灣企銀&quot;).Cell(&quot;D1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteCellX_82" Value="[&quot;即期賣出&quot;]" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;臺灣企銀&quot;).Range(&quot;E2:F2&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_69" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;臺灣企銀&quot;).Range(&quot;C4:D4&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;臺灣企銀&quot;).Range(&quot;E7:F7&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_70" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;臺灣企銀&quot;).Range(&quot;C8:D8&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;臺灣企銀&quot;).Range(&quot;E14:F14&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_71" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;臺灣企銀&quot;).Range(&quot;C15:D15&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;臺灣企銀&quot;).Range(&quot;E14:F14&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_72" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;臺灣企銀&quot;).Range(&quot;C15:D15&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;臺灣企銀&quot;).Range(&quot;E17:F17&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_73" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;臺灣企銀&quot;).Range(&quot;C18:D18&quot;)]" Transpose="False" />
+                        <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;臺灣企銀&quot;).Range(&quot;E20:F20&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="434,240.66666666666666" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_74" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;臺灣企銀&quot;).Range(&quot;C21:D21&quot;)]" Transpose="False" />
+                        <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,138.66666666666666" sap2010:WorkflowViewState.IdRef="DeleteRowsX_20" Range="[Excel.Sheet(&quot;臺灣企銀&quot;)]" RowPositions="3, 4, 8, 15, 18, 21" />
+                        <ueab:DeleteColumnX ColumnName="期別" DisplayName="Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,160.66666666666666" sap2010:WorkflowViewState.IdRef="DeleteColumnX_13" Range="[Excel.Sheet(&quot;臺灣企銀&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="渣打銀行" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_129">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,217.33333333333334" sap2010:WorkflowViewState.IdRef="InsertColumnX_35" NewColumnName="幣別_EN" Range="[Excel.Sheet(&quot;渣打銀行&quot;).Range(&quot;B:B&quot;)]" RelativeColumnName="即期買入" RelativePosition="Before" />
+                        <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;渣打銀行&quot;).Range(&quot;A:A&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="439.3333333333333,326" sap2010:WorkflowViewState.IdRef="TextToColumnsX_42" OtherSeparator="(" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;渣打銀行&quot;).Range(&quot;A:A&quot;)]" SplitByComma="True" SplitByLineBreak="False" SplitByOther="True" SplitBySemicolon="True" SplitBySpace="True" SplitByTabs="True" TextQualifier="None" />
+                        <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;渣打銀行&quot;).Range(&quot;B:B&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="439.3333333333333,326" sap2010:WorkflowViewState.IdRef="TextToColumnsX_43" OtherSeparator=")" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;渣打銀行&quot;).Range(&quot;B:B&quot;)]" SplitByComma="True" SplitByLineBreak="False" SplitByOther="True" SplitBySemicolon="True" SplitBySpace="True" SplitByTabs="True" TextQualifier="None" />
+                        <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;渣打銀行&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="439.3333333333333,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_83" Value="[&quot;幣別_EN&quot;]" />
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="439.3333333333333,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_20" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;-&quot;]" WhereToSearch="[Excel.Sheet(&quot;渣打銀行&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="台中商銀" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_130">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,147.33333333333334" sap2010:WorkflowViewState.IdRef="DeleteRowsX_21" Range="[Excel.Sheet(&quot;台中商銀&quot;)]" RowPositions="2" />
+                        <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,217.33333333333334" sap2010:WorkflowViewState.IdRef="InsertColumnX_36" NewColumnName="幣別_EN" Range="[Excel.Sheet(&quot;台中商銀&quot;).Range(&quot;B:B&quot;)]" RelativeColumnName="即期買入" RelativePosition="Before" />
+                        <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;台中商銀&quot;).Range(&quot;A:A&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="439.3333333333333,326" sap2010:WorkflowViewState.IdRef="TextToColumnsX_44" OtherSeparator="(" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;台中商銀&quot;).Range(&quot;A:A&quot;)]" SplitByComma="True" SplitByLineBreak="False" SplitByOther="False" SplitBySemicolon="True" SplitBySpace="True" SplitByTabs="True" TextQualifier="None" />
+                        <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;台中商銀&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="439.3333333333333,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_84" Value="[&quot;幣別_EN&quot;]" />
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="439.3333333333333,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_21" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;0&quot;]" WhereToSearch="[Excel.Sheet(&quot;台中商銀&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="京城商銀" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_131">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,138.66666666666666" sap2010:WorkflowViewState.IdRef="DeleteRowsX_22" Range="[Excel.Sheet(&quot;京城商銀&quot;)]" RowPositions="2-3" />
+                        <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,138.66666666666666" sap2010:WorkflowViewState.IdRef="DeleteRowsX_23" Range="[Excel.Sheet(&quot;京城商銀&quot;)]" RowPositions="13-15" />
+                      </Sequence>
+                      <Sequence DisplayName="匯豐銀行" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_132">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,217.33333333333334" sap2010:WorkflowViewState.IdRef="InsertColumnX_37" NewColumnName="幣別_EN" Range="[Excel.Sheet(&quot;匯豐銀行&quot;).Range(&quot;B:B&quot;)]" RelativeColumnName="即期買入" RelativePosition="Before" />
+                        <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;匯豐銀行&quot;).Range(&quot;A:A&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="439.3333333333333,326" sap2010:WorkflowViewState.IdRef="TextToColumnsX_45" OtherSeparator="(" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;匯豐銀行&quot;).Range(&quot;A:A&quot;)]" SplitByComma="True" SplitByLineBreak="False" SplitByOther="True" SplitBySemicolon="True" SplitBySpace="True" SplitByTabs="True" TextQualifier="None" />
+                        <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;匯豐銀行&quot;).Range(&quot;B:B&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="439.3333333333333,326" sap2010:WorkflowViewState.IdRef="TextToColumnsX_46" OtherSeparator=")" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;匯豐銀行&quot;).Range(&quot;B:B&quot;)]" SplitByComma="True" SplitByLineBreak="False" SplitByOther="True" SplitBySemicolon="True" SplitBySpace="True" SplitByTabs="True" TextQualifier="None" />
+                        <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;匯豐銀行&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="439.3333333333333,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_85" Value="[&quot;幣別_EN&quot;]" />
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="439.3333333333333,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_22" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;-&quot;]" WhereToSearch="[Excel.Sheet(&quot;匯豐銀行&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="華泰商銀" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_133">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,217.33333333333334" sap2010:WorkflowViewState.IdRef="InsertColumnX_38" NewColumnName="幣別_EN" Range="[Excel.Sheet(&quot;華泰商銀&quot;).Range(&quot;B:B&quot;)]" RelativeColumnName="即期買入" RelativePosition="Before" />
+                        <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;華泰商銀&quot;).Range(&quot;A:A&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="439.3333333333333,326" sap2010:WorkflowViewState.IdRef="TextToColumnsX_47" OtherSeparator="(" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;華泰商銀&quot;).Range(&quot;A:A&quot;)]" SplitByComma="True" SplitByLineBreak="False" SplitByOther="False" SplitBySemicolon="True" SplitBySpace="True" SplitByTabs="True" TextQualifier="None" />
+                        <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;華泰商銀&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="439.3333333333333,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_86" Value="[&quot;幣別_EN&quot;]" />
+                        <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,147.33333333333334" sap2010:WorkflowViewState.IdRef="DeleteRowsX_24" Range="[Excel.Sheet(&quot;華泰商銀&quot;)]" RowPositions="14" />
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="439.3333333333333,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_23" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;－&quot;]" WhereToSearch="[Excel.Sheet(&quot;華泰商銀&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="新光銀行" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_134">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,147.33333333333334" sap2010:WorkflowViewState.IdRef="DeleteRowsX_25" Range="[Excel.Sheet(&quot;新光銀行&quot;)]" RowPositions="2" />
+                        <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,217.33333333333334" sap2010:WorkflowViewState.IdRef="InsertColumnX_39" NewColumnName="幣別_EN" Range="[Excel.Sheet(&quot;新光銀行&quot;).Range(&quot;B:B&quot;)]" RelativeColumnName="即期買入" RelativePosition="Before" />
+                        <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;新光銀行&quot;).Range(&quot;A:A&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="439.3333333333333,326" sap2010:WorkflowViewState.IdRef="TextToColumnsX_48" OtherSeparator="(" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;新光銀行&quot;).Range(&quot;A:A&quot;)]" SplitByComma="True" SplitByLineBreak="False" SplitByOther="True" SplitBySemicolon="True" SplitBySpace="False" SplitByTabs="True" TextQualifier="None" />
+                        <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;新光銀行&quot;).Range(&quot;B:B&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="439.3333333333333,326" sap2010:WorkflowViewState.IdRef="TextToColumnsX_49" OtherSeparator=")" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;新光銀行&quot;).Range(&quot;B:B&quot;)]" SplitByComma="True" SplitByLineBreak="False" SplitByOther="True" SplitBySemicolon="True" SplitBySpace="True" SplitByTabs="True" TextQualifier="None" />
+                        <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;新光銀行&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="439.3333333333333,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_87" Value="[&quot;幣別_EN&quot;]" />
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="439.3333333333333,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_24" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;-&quot;]" WhereToSearch="[Excel.Sheet(&quot;新光銀行&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="陽信商銀" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_139">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,386" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_39" Range="[Excel.Sheet(&quot;陽信商銀&quot;)]" SaveAfterEachRow="False">
+                          <ueab:ExcelForEachRowX.Body>
+                            <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                              <ActivityAction.Argument1>
+                                <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                              </ActivityAction.Argument1>
+                              <ActivityAction.Argument2>
+                                <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                              </ActivityAction.Argument2>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,193.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_135">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="338,71.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_43">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("即期買入")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="ue:ExcelValue">[System.Text.RegularExpressions.Regex.Match(CurrentRow.ByField("即期買入"),"\d+(\.\d+)?").Value]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelForEachRowX.Body>
+                        </ueab:ExcelForEachRowX>
+                        <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,386" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_40" Range="[Excel.Sheet(&quot;陽信商銀&quot;)]" SaveAfterEachRow="False">
+                          <ueab:ExcelForEachRowX.Body>
+                            <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                              <ActivityAction.Argument1>
+                                <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                              </ActivityAction.Argument1>
+                              <ActivityAction.Argument2>
+                                <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                              </ActivityAction.Argument2>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,193.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_136">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="338,71.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_44">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("即期賣出")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="ue:ExcelValue">[System.Text.RegularExpressions.Regex.Match(CurrentRow.ByField("即期賣出"),"\d+(\.\d+)?").Value]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelForEachRowX.Body>
+                        </ueab:ExcelForEachRowX>
+                        <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,386" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_41" Range="[Excel.Sheet(&quot;陽信商銀&quot;)]" SaveAfterEachRow="False">
+                          <ueab:ExcelForEachRowX.Body>
+                            <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                              <ActivityAction.Argument1>
+                                <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                              </ActivityAction.Argument1>
+                              <ActivityAction.Argument2>
+                                <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                              </ActivityAction.Argument2>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,193.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_137">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="338,71.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_45">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("現金買入")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="ue:ExcelValue">[System.Text.RegularExpressions.Regex.Match(CurrentRow.ByField("現金買入"),"\d+(\.\d+)?").Value]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelForEachRowX.Body>
+                        </ueab:ExcelForEachRowX>
+                        <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,386" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_42" Range="[Excel.Sheet(&quot;陽信商銀&quot;)]" SaveAfterEachRow="False">
+                          <ueab:ExcelForEachRowX.Body>
+                            <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                              <ActivityAction.Argument1>
+                                <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                              </ActivityAction.Argument1>
+                              <ActivityAction.Argument2>
+                                <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                              </ActivityAction.Argument2>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,193.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_138">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="338,71.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_46">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("現金賣出")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="ue:ExcelValue">[System.Text.RegularExpressions.Regex.Match(CurrentRow.ByField("現金賣出"),"\d+(\.\d+)?").Value]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelForEachRowX.Body>
+                        </ueab:ExcelForEachRowX>
+                      </Sequence>
+                      <Sequence DisplayName="三信商銀" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_142">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,147.33333333333334" sap2010:WorkflowViewState.IdRef="DeleteRowsX_26" Range="[Excel.Sheet(&quot;三信商銀&quot;)]" RowPositions="2" />
+                        <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,217.33333333333334" sap2010:WorkflowViewState.IdRef="InsertColumnX_40" NewColumnName="幣別_EN" Range="[Excel.Sheet(&quot;三信商銀&quot;).Range(&quot;B:B&quot;)]" RelativeColumnName="即期買入" RelativePosition="Before" />
+                        <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,386" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_43" Range="[Excel.Sheet(&quot;三信商銀&quot;)]" SaveAfterEachRow="False">
+                          <ueab:ExcelForEachRowX.Body>
+                            <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                              <ActivityAction.Argument1>
+                                <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                              </ActivityAction.Argument1>
+                              <ActivityAction.Argument2>
+                                <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                              </ActivityAction.Argument2>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,193.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_140">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="338,71.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_47">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByIndex(1)]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="ue:ExcelValue">[System.Text.RegularExpressions.Regex.Match(CurrentRow.ByIndex(0),"[A-Za-z]{3}").Value]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelForEachRowX.Body>
+                        </ueab:ExcelForEachRowX>
+                        <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,386" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_44" Range="[Excel.Sheet(&quot;三信商銀&quot;)]" SaveAfterEachRow="False">
+                          <ueab:ExcelForEachRowX.Body>
+                            <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                              <ActivityAction.Argument1>
+                                <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                              </ActivityAction.Argument1>
+                              <ActivityAction.Argument2>
+                                <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                              </ActivityAction.Argument2>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,193.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_141">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="338,71.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_48">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByIndex(0)]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="ue:ExcelValue">[System.Text.RegularExpressions.Regex.Match(CurrentRow.ByIndex(0),"[^A-Za-z]+").Value]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelForEachRowX.Body>
+                        </ueab:ExcelForEachRowX>
+                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;三信商銀&quot;).Cell(&quot;A1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="439.3333333333333,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_88" Value="[&quot;幣別&quot;]" />
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="439.3333333333333,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_25" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;------&quot;]" WhereToSearch="[Excel.Sheet(&quot;三信商銀&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="聯邦商銀" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_143">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,217.33333333333334" sap2010:WorkflowViewState.IdRef="InsertColumnX_41" NewColumnName="幣別_EN" Range="[Excel.Sheet(&quot;聯邦商銀&quot;).Range(&quot;B:B&quot;)]" RelativeColumnName="即期買入" RelativePosition="Before" />
+                        <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;聯邦商銀&quot;).Range(&quot;A:A&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="439.3333333333333,326" sap2010:WorkflowViewState.IdRef="TextToColumnsX_50" OtherSeparator="/" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;聯邦商銀&quot;).Range(&quot;A:A&quot;)]" SplitByComma="True" SplitByLineBreak="False" SplitByOther="True" SplitBySemicolon="True" SplitBySpace="True" SplitByTabs="True" TextQualifier="None" />
+                        <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;聯邦商銀&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="439.3333333333333,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_89" Value="[&quot;幣別_EN&quot;]" />
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="439.3333333333333,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_26" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;-&quot;]" WhereToSearch="[Excel.Sheet(&quot;聯邦商銀&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="遠東商銀" sap:VirtualizedContainerService.HintSize="600,365.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_144">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="434,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_27" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;-&quot;]" WhereToSearch="[Excel.Sheet(&quot;遠東商銀&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="元大商銀" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_146">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,217.33333333333334" sap2010:WorkflowViewState.IdRef="InsertColumnX_42" NewColumnName="幣別_EN" Range="[Excel.Sheet(&quot;元大商銀&quot;).Range(&quot;B:B&quot;)]" RelativeColumnName="即期買入" RelativePosition="Before" />
+                        <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;元大商銀&quot;).Range(&quot;A:A&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="439.3333333333333,326" sap2010:WorkflowViewState.IdRef="TextToColumnsX_51" OtherSeparator="(" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;元大商銀&quot;).Range(&quot;A:A&quot;)]" SplitByComma="True" SplitByLineBreak="False" SplitByOther="True" SplitBySemicolon="True" SplitBySpace="False" SplitByTabs="True" TextQualifier="None" />
+                        <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;元大商銀&quot;).Range(&quot;B:B&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="439.3333333333333,326" sap2010:WorkflowViewState.IdRef="TextToColumnsX_52" OtherSeparator=")" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;元大商銀&quot;).Range(&quot;B:B&quot;)]" SplitByComma="True" SplitByLineBreak="False" SplitByOther="True" SplitBySemicolon="True" SplitBySpace="True" SplitByTabs="True" TextQualifier="None" />
+                        <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;元大商銀&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="439.3333333333333,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_90" Value="[&quot;幣別_EN&quot;]" />
+                        <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,90.66666666666667" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_45" Range="[Excel.Sheet(&quot;元大商銀&quot;)]" SaveAfterEachRow="False">
+                          <ueab:ExcelForEachRowX.Body>
+                            <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                              <ActivityAction.Argument1>
+                                <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                              </ActivityAction.Argument1>
+                              <ActivityAction.Argument2>
+                                <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                              </ActivityAction.Argument2>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,190.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_145">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="338,71.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_49">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("幣別")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="ue:ExcelValue">[System.Text.RegularExpressions.Regex.Replace(CurrentRow.ByField("幣別"), "[\u3000]", "")]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelForEachRowX.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ueab:ExcelForEachRowX>
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="439.3333333333333,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_28" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;-&quot;]" WhereToSearch="[Excel.Sheet(&quot;元大商銀&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="永豐商銀" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_147">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,217.33333333333334" sap2010:WorkflowViewState.IdRef="InsertColumnX_43" NewColumnName="幣別_EN" Range="[Excel.Sheet(&quot;永豐商銀&quot;).Range(&quot;B:B&quot;)]" RelativeColumnName="即期買入" RelativePosition="Before" />
+                        <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;永豐商銀&quot;).Range(&quot;A:A&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="439.3333333333333,326" sap2010:WorkflowViewState.IdRef="TextToColumnsX_53" OtherSeparator="(" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;永豐商銀&quot;).Range(&quot;A:A&quot;)]" SplitByComma="True" SplitByLineBreak="False" SplitByOther="True" SplitBySemicolon="True" SplitBySpace="True" SplitByTabs="True" TextQualifier="None" />
+                        <ueab:TextToColumnsX NumberOfCharactersPerColumn="{x:Null}" ConsecutiveOperatorsAsOne="True" DestinationRange="[Excel.Sheet(&quot;永豐商銀&quot;).Range(&quot;B:B&quot;)]" DisplayName="Text to Columns" sap:VirtualizedContainerService.HintSize="439.3333333333333,326" sap2010:WorkflowViewState.IdRef="TextToColumnsX_54" OtherSeparator=")" ParsingType="Delimited" SourceRange="[Excel.Sheet(&quot;永豐商銀&quot;).Range(&quot;B:B&quot;)]" SplitByComma="True" SplitByLineBreak="False" SplitByOther="True" SplitBySemicolon="True" SplitBySpace="True" SplitByTabs="True" TextQualifier="None" />
+                        <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;永豐商銀&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="439.3333333333333,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_91" Value="[&quot;幣別_EN&quot;]" />
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="439.3333333333333,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_29" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;-&quot;]" WhereToSearch="[Excel.Sheet(&quot;永豐商銀&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="凱基銀行" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_148">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="434,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_30" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;-&quot;]" WhereToSearch="[Excel.Sheet(&quot;凱基銀行&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="星展銀行" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_149">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="434,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_31" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;---&quot;]" WhereToSearch="[Excel.Sheet(&quot;星展銀行&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="台新銀行" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_152">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,147.33333333333334" sap2010:WorkflowViewState.IdRef="DeleteRowsX_27" Range="[Excel.Sheet(&quot;台新銀行&quot;)]" RowPositions="2" />
+                        <ueab:DeleteColumnX ColumnName="刪掉" DisplayName="Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,169.33333333333334" sap2010:WorkflowViewState.IdRef="DeleteColumnX_14" Range="[Excel.Sheet(&quot;台新銀行&quot;)]" />
+                        <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,217.33333333333334" sap2010:WorkflowViewState.IdRef="InsertColumnX_44" NewColumnName="幣別_EN" Range="[Excel.Sheet(&quot;台新銀行&quot;).Range(&quot;B:B&quot;)]" RelativeColumnName="即期買入" RelativePosition="Before" />
+                        <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,385.3333333333333" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_46" Range="[Excel.Sheet(&quot;台新銀行&quot;)]" SaveAfterEachRow="False">
+                          <ueab:ExcelForEachRowX.Body>
+                            <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                              <ActivityAction.Argument1>
+                                <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                              </ActivityAction.Argument1>
+                              <ActivityAction.Argument2>
+                                <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                              </ActivityAction.Argument2>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,193.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_150">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="338,71.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_50">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByIndex(1)]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="ue:ExcelValue">[System.Text.RegularExpressions.Regex.Match(CurrentRow.ByIndex(0),"[A-Za-z]{3}").Value]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelForEachRowX.Body>
+                        </ueab:ExcelForEachRowX>
+                        <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,385.3333333333333" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_47" Range="[Excel.Sheet(&quot;台新銀行&quot;)]" SaveAfterEachRow="False">
+                          <ueab:ExcelForEachRowX.Body>
+                            <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                              <ActivityAction.Argument1>
+                                <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                              </ActivityAction.Argument1>
+                              <ActivityAction.Argument2>
+                                <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                              </ActivityAction.Argument2>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,193.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_151">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="338,71.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_51">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByIndex(0)]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="ue:ExcelValue">[System.Text.RegularExpressions.Regex.Match(CurrentRow.ByIndex(0),"[^A-Za-z]+").Value]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelForEachRowX.Body>
+                        </ueab:ExcelForEachRowX>
+                        <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439.3333333333333,147.33333333333334" sap2010:WorkflowViewState.IdRef="DeleteRowsX_28" Range="[Excel.Sheet(&quot;台新銀行&quot;)]" RowPositions="16-17" />
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="439.3333333333333,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_32" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;-&quot;]" WhereToSearch="[Excel.Sheet(&quot;台新銀行&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="安泰銀行" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_153">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="434,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_33" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;--&quot;]" WhereToSearch="[Excel.Sheet(&quot;安泰銀行&quot;)]" />
+                      </Sequence>
+                      <Sequence DisplayName="中國信託" sap:VirtualizedContainerService.HintSize="600,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_154">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:FindReplaceValueX FoundAt="{x:Null}" DisplayName="Find/Replace Value" sap:VirtualizedContainerService.HintSize="434,243.33333333333334" sap2010:WorkflowViewState.IdRef="FindReplaceValueX_34" LookIn="Values" Operation="ReplaceAll" ReplaceWith="[&quot;&quot;]" ValueToFind="[&quot;-&quot;]" WhereToSearch="[Excel.Sheet(&quot;中國信託&quot;)]" />
+                      </Sequence>
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="600,310" sap2010:WorkflowViewState.IdRef="CommentOut_32">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,221.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_155">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:DeleteSheetX DisplayName="Delete Sheet" sap:VirtualizedContainerService.HintSize="434,99.33333333333333" sap2010:WorkflowViewState.IdRef="DeleteSheetX_2" Sheet="[Excel.Sheet(&quot;工作表1&quot;)]" />
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                      </ui:CommentOut>
+                    </Sequence>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>

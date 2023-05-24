@@ -1,0 +1,503 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="pivot" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="880,2656.6666666666665" sap2010:WorkflowViewState.IdRef="pivot_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="pivot" sap:VirtualizedContainerService.HintSize="890,2592" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="row_num" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="828,2470" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="794,2374" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="732,2252" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="[&quot;data/Pivot&quot; +Now.ToString(&quot;yyyyMMdd HH&quot;) + &quot;.xlsx&quot;]">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence sap:VirtualizedContainerService.HintSize="698,1972" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="636,1748.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="[&quot;data/各銀行匯率資料_&quot; +Now.ToString(&quot;yyyyMMdd HH&quot;) + &quot;.xlsx&quot;]">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="raw" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,1468.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Sequence DisplayName="臺灣銀行" sap:VirtualizedContainerService.HintSize="540,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B1&quot;)]" DisplayName="Append Range" HasHeaders="False" sap:VirtualizedContainerService.HintSize="434,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_1" PasteOptions="All" SourceRange="[raw.Sheet(&quot;臺灣銀行&quot;)]" Transpose="False" />
+                              <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,138.66666666666666" sap2010:WorkflowViewState.IdRef="DeleteRowsX_1" Range="[Excel.Sheet(&quot;Pivot&quot;)]" RowPositions="1" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[&quot;銀行名稱&quot;]" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[&quot;臺灣銀行&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="434,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_1" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A2&quot;)]" />
+                              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,52.666666666666664" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                                <ui:CommentOut.Body>
+                                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,163.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:ClearRangeX DisplayName="Clear Sheet/Range/Table" HasHeaders="False" sap:VirtualizedContainerService.HintSize="388,52.666666666666664" sap2010:WorkflowViewState.IdRef="ClearRangeX_2" TargetRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A2:G20&quot;)]">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ueab:ClearRangeX>
+                                  </Sequence>
+                                </ui:CommentOut.Body>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:CommentOut>
+                            </Sequence>
+                            <ueab:ForEachSheetX DisplayName="For Each Excel Sheet" sap:VirtualizedContainerService.HintSize="540,1076.6666666666667" sap2010:WorkflowViewState.IdRef="ForEachSheetX_2" Workbook="[raw]">
+                              <ueab:ForEachSheetX.Body>
+                                <ActivityAction x:TypeArguments="ue:WorksheetQuickHandle, x:Int32">
+                                  <ActivityAction.Argument1>
+                                    <DelegateInArgument x:TypeArguments="ue:WorksheetQuickHandle" Name="CurrentSheet" />
+                                  </ActivityAction.Argument1>
+                                  <ActivityAction.Argument2>
+                                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                  </ActivityAction.Argument2>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,910" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,178.66666666666666" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Pivot&quot;)]" SaveTo="[row_num]" />
+                                    <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B&quot; + (row_num.Rows.Count+1).ToString)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="444,221.33333333333334" sap2010:WorkflowViewState.IdRef="AppendRangeX_2" PasteOptions="All" SourceRange="[CurrentSheet]" Transpose="False" />
+                                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,168.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[CurrentSheet.Name]" />
+                                    <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="444,99.33333333333333" sap2010:WorkflowViewState.IdRef="AutoFillX_2" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ForEachSheetX.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ueab:ForEachSheetX>
+                            <ueab:DeleteSheetX DisplayName="Delete Sheet" sap:VirtualizedContainerService.HintSize="540,99.33333333333333" sap2010:WorkflowViewState.IdRef="DeleteSheetX_1" Sheet="[Excel.Sheet(&quot;工作表1&quot;)]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="636,61.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="630,3336" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Sequence DisplayName="臺灣銀行" sap:VirtualizedContainerService.HintSize="506,82" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B1&quot;)]" DisplayName="Append Range" HasHeaders="False" sap:VirtualizedContainerService.HintSize="434,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_20" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;臺灣銀行&quot;)]" Transpose="False" />
+                              <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,138.66666666666666" sap2010:WorkflowViewState.IdRef="DeleteRowsX_2" Range="[Excel.Sheet(&quot;Pivot&quot;)]" RowPositions="1" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteCellX_21" Value="[&quot;銀行名稱&quot;]" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="WriteCellX_22" Value="[&quot;臺灣銀行&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="434,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_20" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A2&quot;)]" />
+                              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,52.666666666666664" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                                <ui:CommentOut.Body>
+                                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,163.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:ClearRangeX DisplayName="Clear Sheet/Range/Table" HasHeaders="False" sap:VirtualizedContainerService.HintSize="388,52.666666666666664" sap2010:WorkflowViewState.IdRef="ClearRangeX_3" TargetRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A2:G20&quot;)]">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ueab:ClearRangeX>
+                                  </Sequence>
+                                </ui:CommentOut.Body>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:CommentOut>
+                            </Sequence>
+                            <Sequence DisplayName="臺灣土地銀行" sap:VirtualizedContainerService.HintSize="506,864" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_19" Range="[Excel.Sheet(&quot;Pivot&quot;)]" SaveTo="[row_num]" />
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B&quot; + (row_num.Rows.Count+1).ToString)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="444,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_21" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;臺灣土地銀行&quot;)]" Transpose="False" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,160" sap2010:WorkflowViewState.IdRef="WriteCellX_23" Value="[&quot;臺灣土地銀行&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="444,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_21" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" />
+                            </Sequence>
+                            <Sequence DisplayName="合作金庫" sap:VirtualizedContainerService.HintSize="506,82" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" Range="[Excel.Sheet(&quot;Pivot&quot;)]" SaveTo="[row_num]" />
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B&quot; + (row_num.Rows.Count+1).ToString)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="444,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_3" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;合作金庫&quot;)]" Transpose="False" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,160" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[&quot;合作金庫&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="444,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_3" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" />
+                            </Sequence>
+                            <Sequence DisplayName="第一銀行" sap:VirtualizedContainerService.HintSize="450,82" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_9" Range="[Excel.Sheet(&quot;Pivot&quot;)]" SaveTo="[row_num]" />
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B&quot; + (row_num.Rows.Count+1).ToString)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="444,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_10" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;第一銀行&quot;)]" Transpose="False" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,160" sap2010:WorkflowViewState.IdRef="WriteCellX_11" Value="[&quot;第一銀行&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="444,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_10" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" />
+                            </Sequence>
+                            <Sequence DisplayName="華南銀行" sap:VirtualizedContainerService.HintSize="450,82" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_10" Range="[Excel.Sheet(&quot;Pivot&quot;)]" SaveTo="[row_num]" />
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B&quot; + (row_num.Rows.Count+1).ToString)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="444,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_11" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;華南銀行&quot;)]" Transpose="False" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,160" sap2010:WorkflowViewState.IdRef="WriteCellX_12" Value="[&quot;華南銀行&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="444,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_11" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" />
+                            </Sequence>
+                            <Sequence DisplayName="彰化銀行" sap:VirtualizedContainerService.HintSize="450,82" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_11" Range="[Excel.Sheet(&quot;Pivot&quot;)]" SaveTo="[row_num]" />
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B&quot; + (row_num.Rows.Count+1).ToString)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="444,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_12" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;彰化銀行&quot;)]" Transpose="False" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,160" sap2010:WorkflowViewState.IdRef="WriteCellX_13" Value="[&quot;彰化銀行&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="444,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_12" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" />
+                            </Sequence>
+                            <Sequence DisplayName="上海商銀" sap:VirtualizedContainerService.HintSize="450,82" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_12" Range="[Excel.Sheet(&quot;Pivot&quot;)]" SaveTo="[row_num]" />
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B&quot; + (row_num.Rows.Count+1).ToString)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="444,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_13" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;上海商銀&quot;)]" Transpose="False" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,160" sap2010:WorkflowViewState.IdRef="WriteCellX_14" Value="[&quot;上海商銀&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="444,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_13" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" />
+                            </Sequence>
+                            <Sequence DisplayName="富邦銀行" sap:VirtualizedContainerService.HintSize="450,82" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_3" Range="[Excel.Sheet(&quot;Pivot&quot;)]" SaveTo="[row_num]" />
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B&quot; + (row_num.Rows.Count+1).ToString)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="444,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_4" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;富邦銀行&quot;)]" Transpose="False" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,160" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[&quot;富邦銀行&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="444,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_4" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" />
+                            </Sequence>
+                            <Sequence DisplayName="國泰世華" sap:VirtualizedContainerService.HintSize="450,82" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_4" Range="[Excel.Sheet(&quot;Pivot&quot;)]" SaveTo="[row_num]" />
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B&quot; + (row_num.Rows.Count+1).ToString)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="444,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_5" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;國泰世華&quot;)]" Transpose="False" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,160" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[&quot;國泰世華&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="444,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_5" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" />
+                            </Sequence>
+                            <Sequence DisplayName="高雄銀行" sap:VirtualizedContainerService.HintSize="450,82" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_5" Range="[Excel.Sheet(&quot;Pivot&quot;)]" SaveTo="[row_num]" />
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B&quot; + (row_num.Rows.Count+1).ToString)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="444,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_6" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;高雄銀行&quot;)]" Transpose="False" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,160" sap2010:WorkflowViewState.IdRef="WriteCellX_7" Value="[&quot;高雄銀行&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="444,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_6" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" />
+                            </Sequence>
+                            <Sequence DisplayName="兆豐國際" sap:VirtualizedContainerService.HintSize="450,82" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_6" Range="[Excel.Sheet(&quot;Pivot&quot;)]" SaveTo="[row_num]" />
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B&quot; + (row_num.Rows.Count+1).ToString)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="444,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_7" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;兆豐國際&quot;)]" Transpose="False" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,160" sap2010:WorkflowViewState.IdRef="WriteCellX_8" Value="[&quot;兆豐國際&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="444,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_7" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" />
+                            </Sequence>
+                            <Sequence DisplayName="花旗銀行" sap:VirtualizedContainerService.HintSize="450,82" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_7" Range="[Excel.Sheet(&quot;Pivot&quot;)]" SaveTo="[row_num]" />
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B&quot; + (row_num.Rows.Count+1).ToString)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="444,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_8" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;花旗銀行&quot;)]" Transpose="False" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,160" sap2010:WorkflowViewState.IdRef="WriteCellX_9" Value="[&quot;花旗銀行&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="444,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_8" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" />
+                            </Sequence>
+                            <Sequence DisplayName="王道銀行" sap:VirtualizedContainerService.HintSize="450,82" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_8" Range="[Excel.Sheet(&quot;Pivot&quot;)]" SaveTo="[row_num]" />
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B&quot; + (row_num.Rows.Count+1).ToString)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="444,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_9" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;王道銀行&quot;)]" Transpose="False" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,160" sap2010:WorkflowViewState.IdRef="WriteCellX_10" Value="[&quot;王道銀行&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="444,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_9" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" />
+                            </Sequence>
+                            <Sequence DisplayName="臺灣企銀" sap:VirtualizedContainerService.HintSize="450,82" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_13" Range="[Excel.Sheet(&quot;Pivot&quot;)]" SaveTo="[row_num]" />
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B&quot; + (row_num.Rows.Count+1).ToString)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="444,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_14" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;臺灣企銀&quot;)]" Transpose="False" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,160" sap2010:WorkflowViewState.IdRef="WriteCellX_15" Value="[&quot;臺灣企銀&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="444,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_14" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" />
+                            </Sequence>
+                            <Sequence DisplayName="渣打銀行" sap:VirtualizedContainerService.HintSize="450,82" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_14" Range="[Excel.Sheet(&quot;Pivot&quot;)]" SaveTo="[row_num]" />
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B&quot; + (row_num.Rows.Count+1).ToString)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="444,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_15" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;渣打銀行&quot;)]" Transpose="False" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,160" sap2010:WorkflowViewState.IdRef="WriteCellX_16" Value="[&quot;渣打銀行&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="444,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_15" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" />
+                            </Sequence>
+                            <Sequence DisplayName="台中商銀" sap:VirtualizedContainerService.HintSize="450,82" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_15" Range="[Excel.Sheet(&quot;Pivot&quot;)]" SaveTo="[row_num]" />
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B&quot; + (row_num.Rows.Count+1).ToString)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="444,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_16" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;台中商銀&quot;)]" Transpose="False" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,160" sap2010:WorkflowViewState.IdRef="WriteCellX_17" Value="[&quot;台中商銀&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="444,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_16" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" />
+                            </Sequence>
+                            <Sequence DisplayName="京城商銀" sap:VirtualizedContainerService.HintSize="450,82" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_16" Range="[Excel.Sheet(&quot;Pivot&quot;)]" SaveTo="[row_num]" />
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B&quot; + (row_num.Rows.Count+1).ToString)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="444,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_17" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;京城商銀&quot;)]" Transpose="False" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,160" sap2010:WorkflowViewState.IdRef="WriteCellX_18" Value="[&quot;京城商銀&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="444,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_17" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" />
+                            </Sequence>
+                            <Sequence DisplayName="匯豐銀行" sap:VirtualizedContainerService.HintSize="450,82" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_17" Range="[Excel.Sheet(&quot;Pivot&quot;)]" SaveTo="[row_num]" />
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B&quot; + (row_num.Rows.Count+1).ToString)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="444,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_18" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;匯豐銀行&quot;)]" Transpose="False" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,160" sap2010:WorkflowViewState.IdRef="WriteCellX_19" Value="[&quot;匯豐銀行&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="444,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_18" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" />
+                            </Sequence>
+                            <Sequence DisplayName="華泰商銀" sap:VirtualizedContainerService.HintSize="450,82" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_18" Range="[Excel.Sheet(&quot;Pivot&quot;)]" SaveTo="[row_num]" />
+                              <ueab:AppendRangeX StartingColumnName="{x:Null}" DestinationHasHeaders="False" DestinationRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;B&quot; + (row_num.Rows.Count+1).ToString)]" DisplayName="Append Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="444,212.66666666666666" sap2010:WorkflowViewState.IdRef="AppendRangeX_19" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;華泰商銀&quot;)]" Transpose="False" />
+                              <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Pivot&quot;).Cell(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,160" sap2010:WorkflowViewState.IdRef="WriteCellX_20" Value="[&quot;華泰商銀&quot;]" />
+                              <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="444,90.66666666666667" sap2010:WorkflowViewState.IdRef="AutoFillX_19" StartRange="[Excel.Sheet(&quot;Pivot&quot;).Range(&quot;A&quot; +  (row_num.Rows.Count+2).ToString)]" />
+                            </Sequence>
+                          </Sequence>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
